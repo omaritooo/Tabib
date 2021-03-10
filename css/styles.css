@@ -26,7 +26,6 @@ header
   display: flex;
   justify-content: space-around;
   padding-top: 100px;
-  background-image: url("images\Doctor-PNG-File-Download-Free.png");
 }
 
 .css-selector {
@@ -65,7 +64,7 @@ header
     overflow: hidden;
     display: flex;
     top:0;
-  background:#333;
+    background:#333;
     justify-content: center;
     padding: 5px 140px;
     z-index: 9999999; 
@@ -98,6 +97,7 @@ header
     align-items: center;
     margin: 5px 150px;
   }
+
   .btns
   {
     flex-grow: 1;
@@ -121,7 +121,7 @@ align-items: center;  }
     flex-grow: 1;
 }
 .brand
-{
+{   display: flex;
     flex-grow: 3;
 }
 
@@ -245,13 +245,11 @@ svg{
   padding: 0px;
 }
 
-.navbar-default{
+.topnav .navbar-default{
   transition:500ms ease;
-  background:transparent;
+  background-color:red;
 }
-.topnav .scroll {
-  background-color: #A1572F;
-}
+
 .segment1
 { margin-top: 100px;
   margin-bottom: 100px;
@@ -293,10 +291,118 @@ svg{
   opacity: 100%;
 }
 
+/* .animate__pulse
+{
+  animation-iteration-count:infinite;
 
+} */
 .segment2
 {
   background-color: #EEEDED;
+  padding: 0px 50px;
 }
 
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 15%;
+  border-radius: 5px;
+  margin: 100px 15px;
+
   
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardimg {
+  border-radius: 5px 5px 0 0;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.cont {
+  padding: 20px 26px;
+  text-align: left;
+  display: block;
+  
+}
+.cont h6
+{
+  color: #B0B0B0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.cont p
+{
+  margin-top: 10px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.segment2
+{
+  padding-top: 4rem;
+  
+}
+
+.checked
+{
+  color: orange;
+}
+.unchecked
+{
+  color: #C1C0BD;
+}
+
+.reviews
+{
+  color: #C1C0BD;
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+}
+  
+.flashcards
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.seg2info
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seg2info h2
+{
+  font-size: 2.5rem;
+  color: #2B8DCA;
+  font-weight: 200;
+}
+.seg2info p
+{
+  overflow: auto;
+  max-width: 500px;
+  margin-left: 2rem;
+  color: #A0B3CD;
+  font-size: 1rem;
+}
+.seg2info a
+{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #2B8DCA;
+  margin-left: 1.5rem;
+}
+
+.seg2info a:hover
+{
+  color: red;
+}
