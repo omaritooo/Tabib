@@ -100,13 +100,36 @@ header {
   overflow: hidden;
   display: flex;
   top: 0;
-  background: #333;
   justify-content: center;
   padding: 5px 140px;
   z-index: 9999999;
   background: none;
+  transition: all 1s;
 
 
+}
+
+
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  opacity: 1;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+
+  
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
 }
 
 .topnav a {
@@ -283,9 +306,9 @@ svg {
   padding: 0px;
 }
 
-.topnav .navbar-default {
+.navbar-default {
   transition: 500ms ease;
-  background-color: red;
+  background-color: white;
 }
 
 .segment1 {
