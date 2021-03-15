@@ -1,3 +1,4 @@
+@media only screen and (min-width: 768px) {
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -785,3 +786,6 @@ footer
   color: #f9f9f9;
   font-weight: 200;
 }
+
+}
+
